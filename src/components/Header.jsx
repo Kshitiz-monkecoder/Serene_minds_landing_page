@@ -1,51 +1,25 @@
-// src/components/Header.jsx
-import { useState } from 'react';
-import { FiBell, FiLogOut, FiSearch } from 'react-icons/fi';
-import profilePicture from "../assets/8e2becda16e2f3abc85e162b63a8d214.jpeg"
 
-export default function Header() {
-  // eslint-disable-next-line no-unused-vars
-  const [isLoggedIn, setIsLoggedIn] = useState(true); // Toggle for login/logout
-
+const Header = () => {
   return (
-    <header className="flex items-center justify-between px-6 py-4 ">
-      {/* Left Section - Heading & Subheading */}
-      <div className="flex flex-col">
-        <h1 className="text-2xl text-black font-semibold">Dr. Kim</h1>
-        <span className="text-lg text-gray-500">24th Sep. 2024</span>
-      </div>
+    <header className="bg-[#2d3748] border-b-2 border-gray-800 shadow-xl p-4">
+      <div className="container font-poppins mx-auto flex items-center justify-between">
+        {/* Center Links */}
+        <nav className="absolute left-1/2 text-sm  transform -translate-x-1/2 uppercase font-semibold flex space-x-6 text-white">
+          <a href="#home" className="hover:text-blue-500 hover:border-b-2 border-blue-500">Home</a>
+          <a href="#services" className="hover:text-blue-500 hover:border-b-2 border-blue-500">Services</a>
+          <a href="#about" className="hover:text-blue-500 hover:border-b-2 border-blue-500">About</a>
+          <a href="#contact" className="hover:text-blue-500 hover:border-b-2 border-blue-500">Contact</a>
+        </nav>
 
-      {/* Middle Section - Search Box with Icon */}
-      <div className="relative w-1/3">
-        <input
-          type="text"
-          placeholder="Search..."
-          className="w-full py-2 pl-4 pr-10 text-sm bg-[#F4F4F4] border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        <FiSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500" />
-      </div>
-
-      {/* Right Section - Notification & User Info */}
-      <div className="flex items-center gap-6">
-        {/* Notification Bell */}
-        <FiBell className="text-2xl text-gray-600 cursor-pointer" />
-
-        {/* User Info or Logged Out State */}
-        <button className="flex items-center gap-2 px-4 py-2 border rounded-xl hover:bg-gray-200">
-          {isLoggedIn ? (
-            <>
-              <img
-                src={profilePicture}
-                alt="User Profile"
-                className="w-10 h-10 rounded-full object-cover"
-              />
-              <span className="text-base font-medium text-gray-700">Dr. Kim</span>
-            </>
-          ) : (
-            <FiLogOut className="text-xl text-gray-600" />
-          )}
-        </button>
+        {/* Book Appointment Button */}
+        <div className="ml-auto">
+        <button className="bg-blue-500 text-sm uppercase hover:bg-blue-600 text-white py-3 px-6 rounded font-medium shadow-lg">
+            Sign Up
+          </button>
+        </div>
       </div>
     </header>
   );
-}
+};
+
+export default Header;
