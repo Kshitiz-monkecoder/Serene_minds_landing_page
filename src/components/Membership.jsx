@@ -11,7 +11,7 @@ const Membership = () => {
   return (
     <div className="relative isolate text-[#9995AF] font-medium bg-white px-6 py-10 lg:px-8">
         <h1 className="text-center text-4xl text-black font-bold mb-12">
-          Features
+          Subsciption Plans
         </h1>
       {/* Toggle Buttons */}
       <div className="items-center flex justify-center space-x-5">
