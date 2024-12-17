@@ -32,7 +32,7 @@ function AboutUs() {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
             <span className="text-blue-500 mr-1">■ </span>
-            Sit amet gogo
+            Community & Collaboration Section
           </motion.div>
 
           <motion.h1
@@ -42,7 +42,7 @@ function AboutUs() {
             viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            Lorem ipsum dolor sit amet consectetur.
+            Join a Thriving Network of Mental Health Professional
           </motion.h1>
 
           <motion.p
@@ -52,15 +52,10 @@ function AboutUs() {
             viewport={{ once: false }}
             transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-            quidem error incidunt a doloremque voluptatem porro inventore
-            voluptate quo deleniti animi laboriosam.{" "}
-            <a href="#" className="text-blue-400 hover:underline">
-              Possimus ullam velit rem itaque consectetur, in distinctio?
-            </a>{" "}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
-            repellendus quia quos obcaecati nihil. Laudantium non accusantium,
-            voluptate eum nesciunt at suscipit quis est soluta?
+            At Serene <span className="text-blue-500 font-bold">MINDS
+              </span>, we believe in the power of collaboration. Our platform connects you
+            with like-minded professionals for knowledge sharing, case discussions, and peer
+            support.
           </motion.p>
         </motion.div>
       </div>

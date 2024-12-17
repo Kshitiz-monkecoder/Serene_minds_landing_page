@@ -48,8 +48,16 @@ const Subscribe = () => {
           animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?
+          Ready to Transform Your Practice ?
         </motion.h1>
+        <motion.p className="text-white text-lg leading-tight mt-3"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+          transition={{ duration: 1, ease: "easeOut" }}>
+        Sign up today and see the difference Serene <span className="text-blue-500 font-medium">
+          MINDS</span> can make for
+        your mental health practice.
+        </motion.p>
 
         {/* Buttons */}
         <motion.div
@@ -63,7 +71,7 @@ const Subscribe = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            Subscribe to the Newsletter →
+            Get Started For Free →
           </motion.button>
           <motion.button
             className="border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-700 transition"

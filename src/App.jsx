@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -8,6 +9,7 @@ import Footer from "./components/Footer";
 import InfiniteTextCarousel from "./components/InfiniteTextCarousel";
 import AboutUs from "./components/AboutUs";
 import Subscribe from "./components/Subscribe";
+import Membership from "./components/Membership";
 
 function App() {
   return (
@@ -15,14 +17,14 @@ function App() {
       <Header />
       <Hero />
       <InfiniteTextCarousel />
+      <Partners />
       <Services />
       <AboutUs />
       <Testimonials />
+      <Membership />
       <Subscribe />
-      <Partners />
       
       <Footer />
-      
     </div>
   );
 }
